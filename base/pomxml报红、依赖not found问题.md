@@ -1,0 +1,2 @@
+在父pom中的<dependencyManagement>标签里引入带版本(maven官网能查到、且远程仓库也找得到)的jar包时,为什么引入时会爆出depedency not found的红线错误？
+估计是因为在<dependencyManagement>标签中引入jar包时，不会主动去找jar包，我放到<dependecies>标签下就能找到并引入，然后放到本地仓库里
