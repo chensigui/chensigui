@@ -1,0 +1,5 @@
+结论：
+String类用+拼接时，效率最低，因为String是不可变类，所以每次拼接时都会创建新的对象
+String类方法concat拼接时，会在内存复制一份出来，然后拼接到末尾，返回新的对象，效率大于+拼接
+StringBuffer使用append拼接时，返回的是this对象，但是因为是线程安全的，所以效率会小于StringBuilder，大于concat
+StringBuilder使用append拼接时，返回的也是this对象，因为线程不安全，所以效率大于StringBuffer

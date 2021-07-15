@@ -1,0 +1,4 @@
+结论：
+ThreadLocal可作为在一个线程中的多个方法间共享的局部变量，这样可以避免多个方法来回将变量传递的局面
+ThreadLocal相当于给每个线程都开辟了一个独立的存储空间，各个线程的ThreadLocal关联的实例互不干扰
+ThreadLocal的工作原理在于他的内部定义了ThreadLocalMap，这个Map会将当前线程号和ThreadLocal塞入的对象保存起来，可以保证每个线程都只拿到自己的
