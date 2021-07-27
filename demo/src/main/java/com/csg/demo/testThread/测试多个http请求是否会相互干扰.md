@@ -1,0 +1,2 @@
+当我发起对同一个Controller中的不同方法的http请求时，tomcat会在线程池中生成不同的main线程，
+这些main线程是互不干扰的，也就是说实际在controller中运行的线程都是tomcat启动的线程
